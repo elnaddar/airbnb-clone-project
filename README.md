@@ -211,3 +211,33 @@ The Payments entity tracks all financial transactions within the platform.
    - Enum constraints for status fields
 
 This database design ensures scalability, data integrity, and optimal performance for the Airbnb Clone application while supporting all core functionalities and business requirements.
+
+## Feature Breakdown
+
+### 1. User Management
+
+Handles secure registration, authentication, and profile management for guests and hosts. Implements role-based access control and serves as the foundation for all platform interactions. Ensures secure access and maintains user data integrity across the application.
+
+### 2. Property Management
+
+Enables hosts to create, update, and manage rental listings with details like pricing, amenities, and availability. Provides CRUD operations through RESTful APIs for property maintenance. Integrates with search and booking systems for real-time updates.
+
+### 3. Booking System
+
+Facilitates reservation functionality, allowing guests to search and book properties for specific dates. Manages availability checking, booking status tracking, and coordinates with payment processing. Ensures smooth booking experience while maintaining data consistency.
+
+### 4. Payment Processing
+
+Handles secure financial transactions with multiple payment methods and PCI compliance. Integrates with external payment gateways for processing transactions and managing refunds. Works with booking system to verify payments before confirming reservations.
+
+### 5. Review System
+
+Allows guests to provide feedback and ratings after completing stays. Implements one-review-per-booking policy for authentic feedback. Builds trust within the platform community and maintains service quality standards.
+
+### 6. API Documentation
+
+Provides comprehensive OpenAPI documentation for clear frontend-backend communication. Offers interactive documentation for testing endpoints and understanding request/response formats. Supports both REST and GraphQL APIs for flexible integration.
+
+### 7. Database Optimization
+
+Implements strategic indexing, Redis caching, and query optimization for high performance. Includes connection pooling and optimized queries to handle increased loads efficiently. Provides the foundation for fast response times and scalability.
