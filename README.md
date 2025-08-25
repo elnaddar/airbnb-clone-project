@@ -241,3 +241,38 @@ Provides comprehensive OpenAPI documentation for clear frontend-backend communic
 ### 7. Database Optimization
 
 Implements strategic indexing, Redis caching, and query optimization for high performance. Includes connection pooling and optimized queries to handle increased loads efficiently. Provides the foundation for fast response times and scalability.
+
+## API Security
+
+### Key Security Measures
+
+#### Authentication
+
+JWT-based token authentication ensures only verified users access the platform. Prevents unauthorized access to user accounts and sensitive data.
+
+#### Authorization
+
+Role-based permissions control what authenticated users can do. Ensures guests can't modify host properties and hosts can't access other users' bookings.
+
+#### Rate Limiting
+
+Limits API requests per user/IP to prevent abuse and DDoS attacks. Protects server resources and maintains platform availability for all users.
+
+#### Input Validation
+
+Validates all incoming data to prevent SQL injection and XSS attacks. Protects database integrity and prevents malicious code execution.
+
+#### HTTPS Encryption
+
+Encrypts all data transmission between client and server. Secures sensitive information like passwords and payment details during transfer.
+
+#### Data Encryption
+
+Encrypts sensitive data like passwords and payment information in the database. Protects user data even if database security is compromised.
+
+### Why Security Matters
+
+- **User Data Protection**: Safeguards personal information, profiles, and booking history
+- **Payment Security**: Ensures financial transactions are secure and PCI compliant
+- **Platform Integrity**: Maintains trust and prevents unauthorized property modifications
+- **Business Continuity**: Protects against attacks that could disrupt service availability
