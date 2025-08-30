@@ -1,0 +1,1295 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dineug/erd-editor/main/json-schema/schema.json",
+  "version": "3.0.0",
+  "settings": {
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": -970.2652,
+    "scrollLeft": -594.1849,
+    "zoomLevel": 0.85,
+    "show": 293,
+    "database": 4,
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": 1,
+    "tableNameCase": 4,
+    "columnNameCase": 2,
+    "bracketType": 1,
+    "relationshipDataTypeSync": true,
+    "relationshipOptimization": false,
+    "columnOrder": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "maxWidthComment": -1,
+    "ignoreSaveSettings": 0
+  },
+  "doc": {
+    "tableIds": [
+      "z9BdV6IC6yZb2hR8uMbpd",
+      "zMsBZuNHM_hNFSFZPazC1",
+      "lS0EJ-TSZ5kn0rCbluEXx",
+      "qbytgwRxjfuSSLywEzGQR",
+      "84JNlYvrRVwN6I5BdNDuv",
+      "lgF2Ey2ud6T81tZ0G4IHA"
+    ],
+    "relationshipIds": [
+      "rel_property_host",
+      "rel_booking_property",
+      "rel_booking_user",
+      "rel_payment_booking",
+      "rel_review_property",
+      "rel_review_user",
+      "rel_message_sender",
+      "rel_message_recipient"
+    ],
+    "indexIds": [],
+    "memoIds": []
+  },
+  "collections": {
+    "tableEntities": {
+      "z9BdV6IC6yZb2hR8uMbpd": {
+        "id": "z9BdV6IC6yZb2hR8uMbpd",
+        "name": "User",
+        "comment": "",
+        "columnIds": [
+          "col_user_id",
+          "col_user_first_name",
+          "col_user_last_name",
+          "col_user_email",
+          "col_user_password_hash",
+          "col_user_phone_number",
+          "col_user_role",
+          "col_user_created_at"
+        ],
+        "seqColumnIds": [
+          "col_user_id",
+          "col_user_first_name",
+          "col_user_last_name",
+          "col_user_email",
+          "col_user_password_hash",
+          "col_user_phone_number",
+          "col_user_role",
+          "col_user_created_at"
+        ],
+        "ui": {
+          "x": 1082.8001,
+          "y": 846.4436,
+          "zIndex": 2,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1756549162430,
+          "createAt": 1756542132619
+        }
+      },
+      "zMsBZuNHM_hNFSFZPazC1": {
+        "id": "zMsBZuNHM_hNFSFZPazC1",
+        "name": "Property",
+        "comment": "",
+        "columnIds": [
+          "col_property_id",
+          "col_property_host_id",
+          "col_property_name",
+          "col_property_description",
+          "col_property_location",
+          "col_property_price_per_night",
+          "col_property_created_at",
+          "col_property_updated_at"
+        ],
+        "seqColumnIds": [
+          "col_property_id",
+          "col_property_host_id",
+          "col_property_name",
+          "col_property_description",
+          "col_property_location",
+          "col_property_price_per_night",
+          "col_property_created_at",
+          "col_property_updated_at"
+        ],
+        "ui": {
+          "x": 969.7035,
+          "y": 1193.9211,
+          "zIndex": 6,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1756549126207,
+          "createAt": 1756542143927
+        }
+      },
+      "lS0EJ-TSZ5kn0rCbluEXx": {
+        "id": "lS0EJ-TSZ5kn0rCbluEXx",
+        "name": "Booking",
+        "comment": "",
+        "columnIds": [
+          "col_booking_id",
+          "col_booking_property_id",
+          "col_booking_user_id",
+          "col_booking_start_date",
+          "col_booking_end_date",
+          "col_booking_total_price",
+          "col_booking_status",
+          "col_booking_created_at"
+        ],
+        "seqColumnIds": [
+          "col_booking_id",
+          "col_booking_property_id",
+          "col_booking_user_id",
+          "col_booking_start_date",
+          "col_booking_end_date",
+          "col_booking_total_price",
+          "col_booking_status",
+          "col_booking_created_at"
+        ],
+        "ui": {
+          "x": 1343.895,
+          "y": 1138.7522,
+          "zIndex": 12,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1756549121471,
+          "createAt": 1756542161141
+        }
+      },
+      "qbytgwRxjfuSSLywEzGQR": {
+        "id": "qbytgwRxjfuSSLywEzGQR",
+        "name": "Payment",
+        "comment": "",
+        "columnIds": [
+          "col_payment_id",
+          "col_payment_booking_id",
+          "col_payment_amount",
+          "col_payment_date",
+          "col_payment_method"
+        ],
+        "seqColumnIds": [
+          "col_payment_id",
+          "col_payment_booking_id",
+          "col_payment_amount",
+          "col_payment_date",
+          "col_payment_method"
+        ],
+        "ui": {
+          "x": 1395.7781,
+          "y": 823.6023,
+          "zIndex": 16,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1756549115056,
+          "createAt": 1756542172295
+        }
+      },
+      "84JNlYvrRVwN6I5BdNDuv": {
+        "id": "84JNlYvrRVwN6I5BdNDuv",
+        "name": "Review",
+        "comment": "",
+        "columnIds": [
+          "col_review_id",
+          "col_review_property_id",
+          "col_review_user_id",
+          "col_review_rating",
+          "col_review_comment",
+          "col_review_created_at"
+        ],
+        "seqColumnIds": [
+          "col_review_id",
+          "col_review_property_id",
+          "col_review_user_id",
+          "col_review_rating",
+          "col_review_comment",
+          "col_review_created_at"
+        ],
+        "ui": {
+          "x": 737.8888,
+          "y": 968.5211,
+          "zIndex": 23,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1756549151963,
+          "createAt": 1756542192526
+        }
+      },
+      "lgF2Ey2ud6T81tZ0G4IHA": {
+        "id": "lgF2Ey2ud6T81tZ0G4IHA",
+        "name": "Message",
+        "comment": "",
+        "columnIds": [
+          "col_message_id",
+          "col_message_sender_id",
+          "col_message_recipient_id",
+          "col_message_body",
+          "col_message_sent_at"
+        ],
+        "seqColumnIds": [
+          "col_message_id",
+          "col_message_sender_id",
+          "col_message_recipient_id",
+          "col_message_body",
+          "col_message_sent_at"
+        ],
+        "ui": {
+          "x": 731.8938,
+          "y": 779.9581,
+          "zIndex": 30,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1756549160558,
+          "createAt": 1756542208319
+        }
+      }
+    },
+    "tableColumnEntities": {
+      "col_user_id": {
+        "id": "col_user_id",
+        "tableId": "z9BdV6IC6yZb2hR8uMbpd",
+        "name": "user_id",
+        "comment": "",
+        "dataType": "UUID",
+        "default": "",
+        "options": 43,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1756543183344,
+          "createAt": 1756542300000
+        }
+      },
+      "col_user_first_name": {
+        "id": "col_user_first_name",
+        "tableId": "z9BdV6IC6yZb2hR8uMbpd",
+        "name": "first_name",
+        "comment": "",
+        "dataType": "VARCHAR",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1756542300001,
+          "createAt": 1756542300001
+        }
+      },
+      "col_user_last_name": {
+        "id": "col_user_last_name",
+        "tableId": "z9BdV6IC6yZb2hR8uMbpd",
+        "name": "last_name",
+        "comment": "",
+        "dataType": "VARCHAR",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1756542300002,
+          "createAt": 1756542300002
+        }
+      },
+      "col_user_email": {
+        "id": "col_user_email",
+        "tableId": "z9BdV6IC6yZb2hR8uMbpd",
+        "name": "email",
+        "comment": "",
+        "dataType": "VARCHAR",
+        "default": "",
+        "options": 28,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1756543137236,
+          "createAt": 1756542300003
+        }
+      },
+      "col_user_password_hash": {
+        "id": "col_user_password_hash",
+        "tableId": "z9BdV6IC6yZb2hR8uMbpd",
+        "name": "password_hash",
+        "comment": "",
+        "dataType": "VARCHAR",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 82,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1756542300004,
+          "createAt": 1756542300004
+        }
+      },
+      "col_user_phone_number": {
+        "id": "col_user_phone_number",
+        "tableId": "z9BdV6IC6yZb2hR8uMbpd",
+        "name": "phone_number",
+        "comment": "",
+        "dataType": "VARCHAR",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 82,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1756542300005,
+          "createAt": 1756542300005
+        }
+      },
+      "col_user_role": {
+        "id": "col_user_role",
+        "tableId": "z9BdV6IC6yZb2hR8uMbpd",
+        "name": "role",
+        "comment": "",
+        "dataType": "ENUM(guest, host, admin)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 141,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1756548737211,
+          "createAt": 1756542300006
+        }
+      },
+      "col_user_created_at": {
+        "id": "col_user_created_at",
+        "tableId": "z9BdV6IC6yZb2hR8uMbpd",
+        "name": "created_at",
+        "comment": "",
+        "dataType": "TIMESTAMP",
+        "default": "CURRENT_TIMESTAMP",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 65,
+          "widthDefault": 122
+        },
+        "meta": {
+          "updateAt": 1756542300007,
+          "createAt": 1756542300007
+        }
+      },
+      "col_property_id": {
+        "id": "col_property_id",
+        "tableId": "zMsBZuNHM_hNFSFZPazC1",
+        "name": "property_id",
+        "comment": "",
+        "dataType": "UUID",
+        "default": "",
+        "options": 43,
+        "ui": {
+          "keys": 1,
+          "widthName": 63,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1756542400000,
+          "createAt": 1756542400000
+        }
+      },
+      "col_property_host_id": {
+        "id": "col_property_host_id",
+        "tableId": "zMsBZuNHM_hNFSFZPazC1",
+        "name": "host_id",
+        "comment": "",
+        "dataType": "UUID",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 2,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1756543183345,
+          "createAt": 1756542400001
+        }
+      },
+      "col_property_name": {
+        "id": "col_property_name",
+        "tableId": "zMsBZuNHM_hNFSFZPazC1",
+        "name": "name",
+        "comment": "",
+        "dataType": "VARCHAR",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1756542400002,
+          "createAt": 1756542400002
+        }
+      },
+      "col_property_description": {
+        "id": "col_property_description",
+        "tableId": "zMsBZuNHM_hNFSFZPazC1",
+        "name": "description",
+        "comment": "",
+        "dataType": "TEXT",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 61,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1756542400003,
+          "createAt": 1756542400003
+        }
+      },
+      "col_property_location": {
+        "id": "col_property_location",
+        "tableId": "zMsBZuNHM_hNFSFZPazC1",
+        "name": "location",
+        "comment": "",
+        "dataType": "VARCHAR",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1756542400004,
+          "createAt": 1756542400004
+        }
+      },
+      "col_property_price_per_night": {
+        "id": "col_property_price_per_night",
+        "tableId": "zMsBZuNHM_hNFSFZPazC1",
+        "name": "price_per_night",
+        "comment": "",
+        "dataType": "DECIMAL",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 83,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1756542400005,
+          "createAt": 1756542400005
+        }
+      },
+      "col_property_created_at": {
+        "id": "col_property_created_at",
+        "tableId": "zMsBZuNHM_hNFSFZPazC1",
+        "name": "created_at",
+        "comment": "",
+        "dataType": "TIMESTAMP",
+        "default": "CURRENT_TIMESTAMP",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 65,
+          "widthDefault": 122
+        },
+        "meta": {
+          "updateAt": 1756542400006,
+          "createAt": 1756542400006
+        }
+      },
+      "col_property_updated_at": {
+        "id": "col_property_updated_at",
+        "tableId": "zMsBZuNHM_hNFSFZPazC1",
+        "name": "updated_at",
+        "comment": "",
+        "dataType": "TIMESTAMP",
+        "default": "CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 62,
+          "widthComment": 60,
+          "widthDataType": 65,
+          "widthDefault": 312
+        },
+        "meta": {
+          "updateAt": 1756542400007,
+          "createAt": 1756542400007
+        }
+      },
+      "col_booking_id": {
+        "id": "col_booking_id",
+        "tableId": "lS0EJ-TSZ5kn0rCbluEXx",
+        "name": "booking_id",
+        "comment": "",
+        "dataType": "UUID",
+        "default": "",
+        "options": 43,
+        "ui": {
+          "keys": 1,
+          "widthName": 61,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1756542500000,
+          "createAt": 1756542500000
+        }
+      },
+      "col_booking_property_id": {
+        "id": "col_booking_property_id",
+        "tableId": "lS0EJ-TSZ5kn0rCbluEXx",
+        "name": "property_id",
+        "comment": "",
+        "dataType": "UUID",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 2,
+          "widthName": 63,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1756542500001,
+          "createAt": 1756542500001
+        }
+      },
+      "col_booking_user_id": {
+        "id": "col_booking_user_id",
+        "tableId": "lS0EJ-TSZ5kn0rCbluEXx",
+        "name": "user_id",
+        "comment": "",
+        "dataType": "UUID",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 2,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1756543183345,
+          "createAt": 1756542500002
+        }
+      },
+      "col_booking_start_date": {
+        "id": "col_booking_start_date",
+        "tableId": "lS0EJ-TSZ5kn0rCbluEXx",
+        "name": "start_date",
+        "comment": "",
+        "dataType": "DATE",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1756542500003,
+          "createAt": 1756542500003
+        }
+      },
+      "col_booking_end_date": {
+        "id": "col_booking_end_date",
+        "tableId": "lS0EJ-TSZ5kn0rCbluEXx",
+        "name": "end_date",
+        "comment": "",
+        "dataType": "DATE",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1756542500004,
+          "createAt": 1756542500004
+        }
+      },
+      "col_booking_total_price": {
+        "id": "col_booking_total_price",
+        "tableId": "lS0EJ-TSZ5kn0rCbluEXx",
+        "name": "total_price",
+        "comment": "",
+        "dataType": "DECIMAL",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1756542500005,
+          "createAt": 1756542500005
+        }
+      },
+      "col_booking_status": {
+        "id": "col_booking_status",
+        "tableId": "lS0EJ-TSZ5kn0rCbluEXx",
+        "name": "status",
+        "comment": "",
+        "dataType": "ENUM(pending, confirmed, canceled)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 199,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1756548730704,
+          "createAt": 1756542500006
+        }
+      },
+      "col_booking_created_at": {
+        "id": "col_booking_created_at",
+        "tableId": "lS0EJ-TSZ5kn0rCbluEXx",
+        "name": "created_at",
+        "comment": "",
+        "dataType": "TIMESTAMP",
+        "default": "CURRENT_TIMESTAMP",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 65,
+          "widthDefault": 122
+        },
+        "meta": {
+          "updateAt": 1756542500007,
+          "createAt": 1756542500007
+        }
+      },
+      "col_payment_id": {
+        "id": "col_payment_id",
+        "tableId": "qbytgwRxjfuSSLywEzGQR",
+        "name": "payment_id",
+        "comment": "",
+        "dataType": "UUID",
+        "default": "",
+        "options": 43,
+        "ui": {
+          "keys": 1,
+          "widthName": 63,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1756542600000,
+          "createAt": 1756542600000
+        }
+      },
+      "col_payment_booking_id": {
+        "id": "col_payment_booking_id",
+        "tableId": "qbytgwRxjfuSSLywEzGQR",
+        "name": "booking_id",
+        "comment": "",
+        "dataType": "UUID",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 2,
+          "widthName": 61,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1756542600001,
+          "createAt": 1756542600001
+        }
+      },
+      "col_payment_amount": {
+        "id": "col_payment_amount",
+        "tableId": "qbytgwRxjfuSSLywEzGQR",
+        "name": "amount",
+        "comment": "",
+        "dataType": "DECIMAL",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1756542600002,
+          "createAt": 1756542600002
+        }
+      },
+      "col_payment_date": {
+        "id": "col_payment_date",
+        "tableId": "qbytgwRxjfuSSLywEzGQR",
+        "name": "payment_date",
+        "comment": "",
+        "dataType": "TIMESTAMP",
+        "default": "CURRENT_TIMESTAMP",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 77,
+          "widthComment": 60,
+          "widthDataType": 65,
+          "widthDefault": 122
+        },
+        "meta": {
+          "updateAt": 1756542600003,
+          "createAt": 1756542600003
+        }
+      },
+      "col_payment_method": {
+        "id": "col_payment_method",
+        "tableId": "qbytgwRxjfuSSLywEzGQR",
+        "name": "payment_method",
+        "comment": "",
+        "dataType": "ENUM(credit_card, paypal, stripe)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 95,
+          "widthComment": 60,
+          "widthDataType": 178,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1756548761326,
+          "createAt": 1756542600004
+        }
+      },
+      "col_review_id": {
+        "id": "col_review_id",
+        "tableId": "84JNlYvrRVwN6I5BdNDuv",
+        "name": "review_id",
+        "comment": "",
+        "dataType": "UUID",
+        "default": "",
+        "options": 43,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1756542700000,
+          "createAt": 1756542700000
+        }
+      },
+      "col_review_property_id": {
+        "id": "col_review_property_id",
+        "tableId": "84JNlYvrRVwN6I5BdNDuv",
+        "name": "property_id",
+        "comment": "",
+        "dataType": "UUID",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 2,
+          "widthName": 63,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1756542700001,
+          "createAt": 1756542700001
+        }
+      },
+      "col_review_user_id": {
+        "id": "col_review_user_id",
+        "tableId": "84JNlYvrRVwN6I5BdNDuv",
+        "name": "user_id",
+        "comment": "",
+        "dataType": "UUID",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 2,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1756543183345,
+          "createAt": 1756542700002
+        }
+      },
+      "col_review_rating": {
+        "id": "col_review_rating",
+        "tableId": "84JNlYvrRVwN6I5BdNDuv",
+        "name": "rating",
+        "comment": "CHECK: rating >= 1 AND rating <= 5",
+        "dataType": "INTEGER",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 197,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1756542700003,
+          "createAt": 1756542700003
+        }
+      },
+      "col_review_comment": {
+        "id": "col_review_comment",
+        "tableId": "84JNlYvrRVwN6I5BdNDuv",
+        "name": "comment",
+        "comment": "",
+        "dataType": "TEXT",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1756542700004,
+          "createAt": 1756542700004
+        }
+      },
+      "col_review_created_at": {
+        "id": "col_review_created_at",
+        "tableId": "84JNlYvrRVwN6I5BdNDuv",
+        "name": "created_at",
+        "comment": "",
+        "dataType": "TIMESTAMP",
+        "default": "CURRENT_TIMESTAMP",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 65,
+          "widthDefault": 122
+        },
+        "meta": {
+          "updateAt": 1756542700005,
+          "createAt": 1756542700005
+        }
+      },
+      "col_message_id": {
+        "id": "col_message_id",
+        "tableId": "lgF2Ey2ud6T81tZ0G4IHA",
+        "name": "message_id",
+        "comment": "",
+        "dataType": "UUID",
+        "default": "",
+        "options": 43,
+        "ui": {
+          "keys": 1,
+          "widthName": 63,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1756542800000,
+          "createAt": 1756542800000
+        }
+      },
+      "col_message_sender_id": {
+        "id": "col_message_sender_id",
+        "tableId": "lgF2Ey2ud6T81tZ0G4IHA",
+        "name": "sender_id",
+        "comment": "",
+        "dataType": "UUID",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 2,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1756543183344,
+          "createAt": 1756542800001
+        }
+      },
+      "col_message_recipient_id": {
+        "id": "col_message_recipient_id",
+        "tableId": "lgF2Ey2ud6T81tZ0G4IHA",
+        "name": "recipient_id",
+        "comment": "",
+        "dataType": "UUID",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 2,
+          "widthName": 63,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1756543183344,
+          "createAt": 1756542800002
+        }
+      },
+      "col_message_body": {
+        "id": "col_message_body",
+        "tableId": "lgF2Ey2ud6T81tZ0G4IHA",
+        "name": "message_body",
+        "comment": "",
+        "dataType": "TEXT",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 80,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1756542800003,
+          "createAt": 1756542800003
+        }
+      },
+      "col_message_sent_at": {
+        "id": "col_message_sent_at",
+        "tableId": "lgF2Ey2ud6T81tZ0G4IHA",
+        "name": "sent_at",
+        "comment": "",
+        "dataType": "TIMESTAMP",
+        "default": "CURRENT_TIMESTAMP",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 65,
+          "widthDefault": 122
+        },
+        "meta": {
+          "updateAt": 1756542800004,
+          "createAt": 1756542800004
+        }
+      }
+    },
+    "relationshipEntities": {
+      "rel_property_host": {
+        "id": "rel_property_host",
+        "identification": false,
+        "relationshipType": 16,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "z9BdV6IC6yZb2hR8uMbpd",
+          "columnIds": [
+            "col_user_id"
+          ],
+          "x": 1155.0501,
+          "y": 1094.4436,
+          "direction": 8
+        },
+        "end": {
+          "tableId": "zMsBZuNHM_hNFSFZPazC1",
+          "columnIds": [
+            "col_property_host_id"
+          ],
+          "x": 1130.2035,
+          "y": 1193.9211,
+          "direction": 4
+        },
+        "meta": {
+          "updateAt": 1756549044244,
+          "createAt": 1756542900000
+        }
+      },
+      "rel_booking_property": {
+        "id": "rel_booking_property",
+        "identification": false,
+        "relationshipType": 16,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "zMsBZuNHM_hNFSFZPazC1",
+          "columnIds": [
+            "col_property_id"
+          ],
+          "x": 1183.7035,
+          "y": 1317.9211,
+          "direction": 2
+        },
+        "end": {
+          "tableId": "lS0EJ-TSZ5kn0rCbluEXx",
+          "columnIds": [
+            "col_booking_property_id"
+          ],
+          "x": 1343.895,
+          "y": 1324.7522,
+          "direction": 1
+        },
+        "meta": {
+          "updateAt": 1756549070049,
+          "createAt": 1756542900001
+        }
+      },
+      "rel_booking_user": {
+        "id": "rel_booking_user",
+        "identification": false,
+        "relationshipType": 16,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "z9BdV6IC6yZb2hR8uMbpd",
+          "columnIds": [
+            "col_user_id"
+          ],
+          "x": 1299.5501,
+          "y": 1094.4436,
+          "direction": 8
+        },
+        "end": {
+          "tableId": "lS0EJ-TSZ5kn0rCbluEXx",
+          "columnIds": [
+            "col_booking_user_id"
+          ],
+          "x": 1343.895,
+          "y": 1200.7522,
+          "direction": 1
+        },
+        "meta": {
+          "updateAt": 1756549060072,
+          "createAt": 1756542900002
+        }
+      },
+      "rel_payment_booking": {
+        "id": "rel_payment_booking",
+        "identification": false,
+        "relationshipType": 8,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "lS0EJ-TSZ5kn0rCbluEXx",
+          "columnIds": [
+            "col_booking_id"
+          ],
+          "x": 1507.895,
+          "y": 1138.7522,
+          "direction": 4
+        },
+        "end": {
+          "tableId": "qbytgwRxjfuSSLywEzGQR",
+          "columnIds": [
+            "col_payment_booking_id"
+          ],
+          "x": 1565.2781,
+          "y": 999.6023,
+          "direction": 8
+        },
+        "meta": {
+          "updateAt": 1756542900003,
+          "createAt": 1756542900003
+        }
+      },
+      "rel_review_property": {
+        "id": "rel_review_property",
+        "identification": false,
+        "relationshipType": 16,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "zMsBZuNHM_hNFSFZPazC1",
+          "columnIds": [
+            "col_property_id"
+          ],
+          "x": 1023.2035,
+          "y": 1193.9211,
+          "direction": 4
+        },
+        "end": {
+          "tableId": "84JNlYvrRVwN6I5BdNDuv",
+          "columnIds": [
+            "col_review_property_id"
+          ],
+          "x": 931.8888,
+          "y": 1118.5211,
+          "direction": 2
+        },
+        "meta": {
+          "updateAt": 1756548900330,
+          "createAt": 1756542900004
+        }
+      },
+      "rel_review_user": {
+        "id": "rel_review_user",
+        "identification": false,
+        "relationshipType": 16,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "z9BdV6IC6yZb2hR8uMbpd",
+          "columnIds": [
+            "col_user_id"
+          ],
+          "x": 1082.8001,
+          "y": 1053.1102666666666,
+          "direction": 1
+        },
+        "end": {
+          "tableId": "84JNlYvrRVwN6I5BdNDuv",
+          "columnIds": [
+            "col_review_user_id"
+          ],
+          "x": 931.8888,
+          "y": 1018.5211,
+          "direction": 2
+        },
+        "meta": {
+          "updateAt": 1756548882364,
+          "createAt": 1756542900005
+        }
+      },
+      "rel_message_sender": {
+        "id": "rel_message_sender",
+        "identification": false,
+        "relationshipType": 16,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "z9BdV6IC6yZb2hR8uMbpd",
+          "columnIds": [
+            "col_user_id"
+          ],
+          "x": 1082.8001,
+          "y": 887.7769333333332,
+          "direction": 1
+        },
+        "end": {
+          "tableId": "lgF2Ey2ud6T81tZ0G4IHA",
+          "columnIds": [
+            "col_message_sender_id"
+          ],
+          "x": 942.8938,
+          "y": 823.9581,
+          "direction": 2
+        },
+        "meta": {
+          "updateAt": 1756549006076,
+          "createAt": 1756542900006
+        }
+      },
+      "rel_message_recipient": {
+        "id": "rel_message_recipient",
+        "identification": false,
+        "relationshipType": 16,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "z9BdV6IC6yZb2hR8uMbpd",
+          "columnIds": [
+            "col_user_id"
+          ],
+          "x": 1082.8001,
+          "y": 970.4435999999998,
+          "direction": 1
+        },
+        "end": {
+          "tableId": "lgF2Ey2ud6T81tZ0G4IHA",
+          "columnIds": [
+            "col_message_recipient_id"
+          ],
+          "x": 942.8938,
+          "y": 911.9581,
+          "direction": 2
+        },
+        "meta": {
+          "updateAt": 1756549026977,
+          "createAt": 1756542900007
+        }
+      }
+    },
+    "indexEntities": {},
+    "indexColumnEntities": {},
+    "memoEntities": {}
+  }
+}
